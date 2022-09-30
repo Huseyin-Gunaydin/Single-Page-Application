@@ -5,3 +5,5 @@
 
 ## npm
 *um ein Paket in unsere App zu installieren benutzen wir den Befehel `npm install <paketName>` bzw `npm install --save <paketName>` um explizit das PAket als Dependency (Abhängigkeit) in unsere package.json hinzuzufügen.
+
+##Webpack
