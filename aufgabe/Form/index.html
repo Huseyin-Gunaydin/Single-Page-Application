@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3bc4e7e55e.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form >
+        <label for="firstname">First name:</label>
+        <input name="firstname" type="text" id="firstname" required />
+
+        <label for="lastname">Last name: </label>
+        <input name="lastname" type="text" id="lastname" />
+
+        <label for="email">Email: </label>
+        <input name="email" type="email" id="email" required />
+
+        <label for="pass">Password: </label>
+        <input name="password" type="password" id="pass" required/><i class="fa-regular fa-eye" onclick="togglePassword()"></i>
+     
+
+        <label for="pass1">Password wiederholen: </label>
+        <input name="password1" type="password" id="pass1" required/> <i class="fa-regular fa-eye" onclick="togglePassword1()"></i>
+
+        <label for="birthday">Geburtsdatum</label>
+        <input id="birthday" type="date" required>
+
+        <div class="geschlecht">
+        <label>Geschlecht:</label>
+        <input type="radio" name="geschlecht" id="männlich" value="männl"> <span>männlich</span> 
+        <input type="radio" name="geschlecht" id="weiblich" value="weibl"> <span>weiblich</span> 
+ 
+    </div>
+ 
+        <label for="comments">Kleine Vorstellung: 
+        </label>
+        <textarea
+        name="comments"
+        id="comments"
+        placeholder="Kleine Vorstellung"
+      ></textarea>
+        
+     <div class="zustimmung">  
+
+        <input name="Datenschutz" type="checkbox" id="Datenschutz" required />
+        <label id="datenschutz" for="Datenschutz"><a href="#">Zustimmung Datenschutz</a>
+        </label>    
+    </div>
+    <div class="agb">  
+        <input name="agb" type="checkbox" id="agb" required />
+        <label id="agb" for="agb"><a href="#">Zustimmung AGB</a>
+        </label>    
+    </div>
+
+    <div class="button" >
+    <input type="submit" value="Speichern">
+    <input type="reset" value="reset">
+    </div>
+    
+</form>  
+
+    
+</body>
+</html>

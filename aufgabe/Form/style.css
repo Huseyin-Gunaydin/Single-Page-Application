@@ -1,0 +1,94 @@
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+div{
+  display: flex;
+  margin-bottom: 30px;
+}
+div .geschlecht1{
+  margin-right: 50px;
+}
+
+
+.zustimmung, .agb{
+  width: 40%;
+  margin-bottom: 10px;
+}
+.agb{
+  width: 40%;
+  margin-top: 0px;
+
+}
+
+.zustimmung label, .agb label{
+  width: 300px;
+  
+
+}
+.zustimmung input, .agb input{
+  margin-top: 20px;
+  width: 20px;
+}
+
+
+label {
+    margin-top: 20px;
+    color: darkcyan;
+    font-size: 24px;  justify-content: flex-start;
+  }
+
+  textarea {
+    width: 40%;
+    height: 140px;
+    margin-left: 10px;
+  }
+
+ input,
+label {
+  display: block;
+  width: 40%;
+  margin-left: 10px;
+  height: 30px;
+}
+
+
+.geschlecht{
+    display:flex;
+    width: 40%;
+}
+
+.geschlecht input{
+  width: 50%;
+  margin-top: 15px;
+
+}
+.geschlecht span{
+ color: brown;
+ font-size: 20px;
+ margin-top: 18px;
+
+
+}
+
+
+#datenschutz a{
+  text-decoration: none;
+}
+
+.button{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.button input:first-child{
+  background-color: green;
+}
+.button input:last-child{
+  background-color: rgb(226, 47, 15);
+}
