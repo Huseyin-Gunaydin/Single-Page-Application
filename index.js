@@ -26,6 +26,8 @@ getCharacter();
 
 
 
+
+
 const postCharacter = async () => {
     const profile = { 
         name: "Lingning Man" 
