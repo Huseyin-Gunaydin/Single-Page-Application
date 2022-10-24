@@ -1,5 +1,6 @@
 import RoomDatas from "./rooms.json";
 import "./room.css"
+import Button from "./button"
 
 
 RoomDatas.sort((a, b) => +a.roomNo - +b.roomNo);
@@ -13,6 +14,7 @@ const roomInfos = RoomDatas.map((room, i) => {
     return result;
   }
 
+  
   return (
     <div className="Room" key={i}>
       <h4 className="Room__No" style={{ textDecoration: "underline" }}>
@@ -24,6 +26,7 @@ const roomInfos = RoomDatas.map((room, i) => {
       <p className="Room__CheckIn">Check-In Date: {checkDate("checkIn")}</p>
       <p className="Room__CheckOut">Check-Out Date: {checkDate("checkOut")}</p>
       <br />
+      <Button roomNummer={room.roomNo}/>
     </div>
   );
 });
