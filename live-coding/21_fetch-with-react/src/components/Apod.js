@@ -22,10 +22,10 @@ export default function Apod({date}) {
 
 
     return (
-        <div>
+        <>
             <img src={picture.hdurl}></img>
             <h3>{picture.title}</h3>
             <p>{picture.explanation}</p>
-        </div>
+        </>
     )
 }
